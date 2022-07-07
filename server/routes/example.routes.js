@@ -1,6 +1,6 @@
 const express = require('express'),
-	router = express.Router()
-	Controller = require('../controllers/example.controller.js')
+	router = express.Router(),
+	Controller = require('../controllers/example.controller.js'),
 	AuthMiddleware = require('../middlewares/auth.example.js');
 
 // Middleware..

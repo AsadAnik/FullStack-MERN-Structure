@@ -1,7 +1,8 @@
 const express = require('express'),
-	bodyParser = require('body-parser')
-	exampleRouter = require('../routes/example.routes.js')
-	path = require('path')
+	bodyParser = require('body-parser'),
+	cors = require('cors'),
+	exampleRouter = require('../routes/example.routes.js'),
+	path = require('path'),
 	mongoose = require('mongoose');
 
 // Exports init function..
@@ -27,6 +28,9 @@ module.exports.init = () => {
 
 	// initialize app..
 	const app = express();
+
+	// use CORS middleware ro Cross Origin Resource Sharing..
+	app.use(cors());
 
 	// use body-parsing middleware..
 	app.use(bodyParser.json());
