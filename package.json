@@ -19,8 +19,10 @@
     "body-parser": "^1.19.1",
     "concurrently": "^7.0.0",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
     "express": "^4.17.2",
     "mongoose": "^6.1.6",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.15"
   }
 }
